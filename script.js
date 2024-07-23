@@ -47,8 +47,9 @@ function convertToRoman(num) {
 		    roman+=obj[objidx-1][0]
 		}
 		else if(firstdig==9 && number<1000){
-		    roman+=obj[objidx-1][0]
 			roman+=obj[objidx+1][0]
+		    roman+=obj[objidx-1][0]
+			
 		}
 		else{
 			while(obj[objidx][1]<=number){
